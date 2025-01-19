@@ -19,7 +19,7 @@ allowing you to simulate a fully digital, fully analog, or
 conventional display.
 
 # Usage
-
+```
 usage: odometer.py [-h] [-r RATE] [-d DIGITS] [-s START] -f FINISH [-t TIME]
                    [--file FILE] [-m {DIGITAL,ANALOG,ANALOG_ALL}]
 odometer.py: error: the following arguments are required: -f/--finish
@@ -34,6 +34,7 @@ Options:
   -t, --time      Time per frame in milliseconds (default: 15).
       --file      Output file name (default: <finish>.gif).
   -m, --mode      Mode of the animation, one of DIGITAL, ANALOG, ANALOG_ALL (default: ANALOG).
+```
 
 # Sample
 
