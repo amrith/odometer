@@ -220,11 +220,10 @@ def make_counter_gif(digits=8, start=0, finish=1000000,
 
     # compute the image size
     for v in values:
-        # print(f"Make image for value {v}")
         img = make_counter_frame(digits, v, digit_width, digit_height,
                                  locations, image_size, boxes, mode)
-        filename = f"{DEBUG_DIR}/{v:.2f}.gif"
-        img.save(filename, "GIF")
+        # filename = f"{DEBUG_DIR}/{v:.2f}.gif"
+        # img.save(filename, "GIF")
         frames.append(img)
 
     frames[0].save(f"{file}", save_all=True,
@@ -282,7 +281,7 @@ def main():
         print(usage())
         sys.exit(e.code)
 
-    make_debug_dir()
+    # make_debug_dir()
     make_counter_gif(digits=args.digits,
                      start=args.start,
                      finish=args.finish,
